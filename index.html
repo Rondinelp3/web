@@ -4,63 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection">
-    <link type="text/css" rel="stylesheet" href="css/estilos.css">
+    <!--
+        <link type="text/css" rel="stylesheet" href="css/estilos.css">
+    -->
     <link type="text/css" rel="stylesheet" href="css/fontello.css">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 
     <title>Eden</title>
+    <style>
+
+    </style>
 </head>
 <body>
-    <header>
-        <div class="row">
-            <div class="col s12">
-                 <nav class="navegacion">
-                    <div class="nav-wrapper">
-                      <a href="#"  class="brand-logo" style="background-image: url(img/logo3.png);width: 231px;height: 91px;background-size: cover"></a>
-                      <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li><a href=""> ABOUT US</a></li>
-                        <li><a href="">TEAM</a></li>
-                        <li><a href="">CONDOMINIUNS</a></li>
-                        <li><a class=" tooltipped" href=""  data-tooltip="DEVELOPMENT PROJECTS">OUR DEVELOPMENTS</a></li>
-                        <li><a href="">LEADERSHIP</a></li>
-                        <li><a href="">CONTACT</a></li>
-                        <span class="icon-facebook fb-logo"></span>
-                        <span class="icon-linkedin link-logo"></span>
-                        <span class="icon-mobile-1 phone-logo"></span>
-                        <span class="contact_nav"> Office: 305.416.4949</span>
-                      </ul>
-                    </div>
-                 </nav>
+<header style="position: absolute;background-color: transparent !important;">
+    <div class="navbar-fixed ">
+        <nav style="background-color: transparent !important;">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">
+                    <img src="img/logo3.png" style="width: 200px" alt="">
+                </a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href=""> ABOUT US</a></li>
+                    <li><a href="">TEAM</a></li>
+                    <li><a href="">CONDOMINIUNS</a></li>
+                    <li><a class=" tooltipped" href="" data-tooltip="DEVELOPMENT PROJECTS">OUR DEVELOPMENTS</a></li>
+                    <li><a href="">LEADERSHIP</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li><a href=""><span class="icon-facebook fb-logo"></span></a></li>
+                    <li><a href=""><span class="icon-linkedin link-logo"></span></a></li>
+                    <li><a href=""><span class="icon-mobile-1 phone-logo"></span></a></li>
+                    <li><a href="" style="line-height: 1.9"><span class="contact_nav" >
+                        Office: 305.416.4949 <br> xxxxxx@xxxxx.com
+                    </span>
+
+                    </a></li>
+                </ul>
             </div>
-        </div>
-    </header>
-    <!--carousel-->
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">Javascript</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+    </ul>
+
+
+</header>
+<!--carousel-->
 <main>
-        <div class="row">
-            <div class="col s12">
-                <div class="carousel carousel-slider">
-                    <a href="" class="carousel-item">
-                        <img src="img/fondo.png" alt="">
-                    </a>
-                    <a href="" class="carousel-item">
-                        <img src="img/fondo.png" alt="">
-                    </a>
-                    <a href="" class="carousel-item">
-                        <img src="img/fondo.png" alt="">
-                    </a>
-                </div>
+    <div class="row">
+        <div class="col s12" style="padding: 0 !important;">
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="img/fondo.png"> <!-- random image -->
+                        <div class="caption left-align">
+                            <h3>Multifamily takaktaktak</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisi</p>
+                            <a class="waves-effect waves-light btn-large btn-flat indigo white-text">
+                                <i class="material-icons right">
+                                    trending_flat
+                                </i>button</a>
+
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/fondo.png"> <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>Left Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/fondo.png"> <!-- random image -->
+                        <div class="caption right-align">
+                            <h3>Right Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+
+                </ul>
             </div>
         </div>
+    </div>
+
+  
 
 </main>
- <!--seccion-->
+<!--seccion-->
 <div class="section">
     <div class="row">
         <div class="col s1 ">
         </div>
         <div class="col s5 ">
-            <img class="img_section2 responsive-img" src="img/imagen2.png"   alt="">
+            <img class="img_section2 responsive-img" src="img/imagen2.png" alt="">
         </div>
         <div class="col s5 ">
             <div class="row">
@@ -68,20 +109,38 @@
                     <h1>History of firm</h1>
                     <h4>EDEN prides itself on being able to identify and capitalize on investment
                         opportunities routinely overlooked by most institutional investors.</h4>
-                    <p class=" ">Eden Multifamily is a residential development & investment firm formed in 2015 to capitalize on unique off-market properties in targeted urban infill submarkets throughout South and Central Florida. Since the company’s inception, EDEN has created a pipeline of over 1,500+ units in development and construction throughout the state of Florida.
-                        The principals of EDEN Multifamily and their affiliated companies have a long and storied commitment to creating varied housing solutions to a broad cross-section of communities. With over 70 years of combined experience at both the local and national levels, EDEN Multifamily has a tremendous understanding of the development and investment business, with deeply rooted connections throughout the entire multifamily industry.</p>
+                    <p class=" ">Eden Multifamily is a residential development & investment firm formed in 2015 to
+                        capitalize on unique off-market properties in targeted urban infill submarkets throughout South
+                        and Central Florida. Since the company’s inception, EDEN has created a pipeline of over 1,500+
+                        units in development and construction throughout the state of Florida.
+                        The principals of EDEN Multifamily and their affiliated companies have a long and storied
+                        commitment to creating varied housing solutions to a broad cross-section of communities. With
+                        over 70 years of combined experience at both the local and national levels, EDEN Multifamily has
+                        a tremendous understanding of the development and investment business, with deeply rooted
+                        connections throughout the entire multifamily industry.</p>
                 </div>
             </div>
         </div>
         <div class="col s1 ">
-         </div>
+        </div>
     </div>
 </div>
 
 
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.sidenav').sidenav();
+    });
+    $(document).ready(function () {
+        $('.slider').slider({
 
-    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script> 
-    <script type="text/javascript" src="js/main.js"></script> 
+            height : 600, // default - height : 400
+            interval: 8000 // default - interval: 6000
+        });
+    });
+</script>
 </body>
 </html>
